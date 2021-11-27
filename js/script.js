@@ -38,3 +38,14 @@ mainButton.onclick = function () {
 		mainVideo.muted = true;
 	}
 };
+
+let playAnim = document.querySelector('.play-anim');
+let texts = document.querySelector('.about__right_texts');
+let leftImg = document.querySelector('.about__left_img');
+let rightImg = document.querySelector('.about__right_img');
+
+playAnim.onclick = function () {
+	texts.classList.add('active');
+	leftImg.classList.add('active');
+	rightImg.classList.add('active');
+}
