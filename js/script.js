@@ -15,3 +15,26 @@ testWebP(function (support) {
 		document.querySelector('body').classList.add('no-webp');
 	}
 });;
+let burger = document.querySelector('.nav__burger');
+let nav = document.querySelector('.nav');
+
+burger.onclick = function () {
+	burger.classList.toggle('burger-open');
+	nav.classList.toggle('nav-open');
+}
+nav.onclick = function (e) {
+	if (e.target.closest('.nav__link')) {
+		burger.classList.remove('burger-open');
+		nav.classList.remove('nav-open');
+	}
+};
+let mainButton = document.querySelector('.main__button');
+let mainVideo = document.querySelector('.main__video');
+
+mainButton.onclick = function () {
+	mainButton.classList.toggle('mute');
+	mainVideo.muted = false;
+	if (!mainButton.classList.contains('mute')) {
+		mainVideo.muted = true;
+	}
+};
