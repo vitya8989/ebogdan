@@ -364,7 +364,9 @@ body {
     -webkit-transition: .25s;
     -o-transition: .25s;
     transition: .25s;
-    padding: 10px 0 20px
+    padding: 10px 0;
+    -webkit-box-shadow: 0 4px 4px rgba(0,0,0,.5);
+    box-shadow: 0 4px 4px rgba(0,0,0,.5)
   }
   .nav__link {
     font-size: 24px
