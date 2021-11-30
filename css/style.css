@@ -112,26 +112,6 @@ body {
   font-family: bickham;
   letter-spacing: 8px
 }
-.play-anim {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 300px;
-  height: 60px;
-  background: #fff;
-  color: #000;
-  font-size: 26px;
-  border-radius: 20px;
-  position: absolute;
-  right: 20px;
-  top: 20px
-}
 .header {
   position: fixed;
   top: 0;
@@ -155,7 +135,7 @@ body {
   align-items: center
 }
 .header__logo {
-  width: 60px;
+  width: 50px;
   height: 60px;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -339,7 +319,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 20px 0 0 0
+  padding: 10px 0 0 0
 }
 .main__logo img {
   width: 200px
@@ -474,17 +454,6 @@ body {
   margin: 40px 0 0 0;
   position: relative
 }
-.services__left_img span {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  font-size: 30px;
-  padding: 10px 20px;
-  border: 3px solid #fff;
-  color: #fff;
-  font-weight: 700;
-  background: rgba(0,0,0,.7)
-}
 .services__left_img img {
   width: 100%;
   height: 100%;
@@ -527,17 +496,6 @@ body {
   height: auto;
   margin: 80px 0 0 0;
   position: relative
-}
-.services__right_img span {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  font-size: 30px;
-  padding: 10px 20px;
-  border: 3px solid #fff;
-  color: #fff;
-  font-weight: 700;
-  background: rgba(0,0,0,.7)
 }
 .services__right_img img {
   width: 100%;
@@ -622,6 +580,78 @@ body {
   height: 70px;
   margin: 0 auto
 }
+.benefits {
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.5)),to(rgba(255,255,255,.6))),url(../img/benefits_bg.png) center/cover no-repeat;
+  background: -o-linear-gradient(top,rgba(255,255,255,.5) 0,rgba(255,255,255,.6) 100%),url(../img/benefits_bg.png) center/cover no-repeat;
+  background: linear-gradient(to bottom,rgba(255,255,255,.5) 0,rgba(255,255,255,.6) 100%),url(../img/benefits_bg.png) center/cover no-repeat;
+  overflow: hidden
+}
+.benefits_title {
+  color: #000;
+  text-shadow: none
+}
+.benefits__content {
+  padding: 80px 0
+}
+.benefits__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0 0 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.benefits__texts {
+  margin: 0 40px 0 0
+}
+.benefits__text {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  line-height: 1.2;
+  text-shadow: 0 0 1.5px #000
+}
+.benefits__text:first-child {
+  margin: 0
+}
+.benefits__text:nth-child(2n) {
+  padding: 0 0 0 40px
+}
+.benefits__images {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  padding: 0 0 285px 112px;
+  position: relative
+}
+.benefits__image {
+  -webkit-box-shadow: 4px 7px 20px 0 rgba(0,0,0,.86);
+  box-shadow: 4px 7px 20px 0 rgba(0,0,0,.86)
+}
+.benefits__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.benefits__image:first-child {
+  width: 515px;
+  height: 426px
+}
+.benefits__image:nth-child(2) {
+  width: 363px;
+  height: 304px;
+  top: 298px;
+  left: 0;
+  position: absolute
+}
+.benefits__image:last-child {
+  width: 329px;
+  height: 285px;
+  position: absolute;
+  right: 38px;
+  bottom: 20px
+}
 @media (max-width:1400px) {
   .services__content {
     padding: 80px 0
@@ -642,6 +672,16 @@ body {
   .work__item {
     font-size: 20px
   }
+  .benefits__texts {
+    margin: 0 20px 0 0
+  }
+  .benefits__images {
+    padding: 0 0 285px 0
+  }
+  .benefits__image:nth-child(2) {
+    left: 40px;
+    top: 240px
+  }
 }
 @media (max-width:1023px) {
   .h2-title {
@@ -651,7 +691,7 @@ body {
     height: 70px
   }
   .header__logo {
-    width: 40px;
+    width: 33px;
     height: 40px
   }
   .header__nav {
@@ -676,6 +716,32 @@ body {
   }
   .about__row {
     margin: 30px 0 0 0
+  }
+  .benefits__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+  }
+  .benefits__texts {
+    margin: 30px 0 0 0
+  }
+  .benefits__text:nth-child(2n) {
+    padding: 0
+  }
+  .benefits__images {
+    width: 100%;
+    padding: 0 0 240px 0
+  }
+  .benefits__image:nth-child(2) {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+  .benefits__image:last-child {
+    right: 0;
+    bottom: 0
   }
 }
 @media (max-width:930px) {
@@ -780,7 +846,7 @@ body {
     width: 200px;
     height: 200px;
     bottom: 0;
-    padding: 30px 0 0 0
+    padding: 15px 0 0 0
   }
   .about__content {
     padding: 40px 0
@@ -832,6 +898,27 @@ body {
     width: 60px;
     height: 60px
   }
+  .benefits__content {
+    padding: 40px 0
+  }
+  .benefits__text {
+    font-size: 18px
+  }
+  .benefits__images {
+    padding: 0 0 130px 0
+  }
+  .benefits__image:nth-child(2) {
+    top: auto;
+    left: auto;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    right: 0;
+    bottom: 0
+  }
+  .benefits__image:last-child {
+    display: none
+  }
 }
 @media (max-width:540px) {
   .about__right_img {
@@ -881,6 +968,13 @@ body {
     width: 50px;
     height: 50px
   }
+  .benefits__images {
+    padding: 0 0 100px 0
+  }
+  .benefits__image:nth-child(2) {
+    right: auto;
+    left: -100px
+  }
 }
 @media (max-width:420px) {
   .services__link {
@@ -913,4 +1007,13 @@ body {
 }
 .webp .work {
   background: linear-gradient(to left,#000 0,rgba(0,0,0,0) 100%),url(../img/about_bg.webp) center/cover no-repeat
+}
+.webp .benefits {
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.5)),to(rgba(255,255,255,.6))),url(../img/benefits_bg.webp) center/cover no-repeat
+}
+.webp .benefits {
+  background: -o-linear-gradient(top,rgba(255,255,255,.5) 0,rgba(255,255,255,.6) 100%),url(../img/benefits_bg.webp) center/cover no-repeat
+}
+.webp .benefits {
+  background: linear-gradient(to bottom,rgba(255,255,255,.5) 0,rgba(255,255,255,.6) 100%),url(../img/benefits_bg.webp) center/cover no-repeat
 }
