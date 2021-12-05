@@ -45,13 +45,11 @@ new Swiper('.reviews-slider', {
 		nextEl: '.reviews-slider__btn-next',
 		prevEl: '.reviews-slider__btn-prev'
 	},
-	spaceBetween: 20,
+	centeredSlides: true,
 	breakpoints: {
-		961: {
-			slidesPerView: 2,
-		},
-		1241: {
+		768: {
 			slidesPerView: 3,
+			initialSlide: 1,
 		},
 	},
 });;
