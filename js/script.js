@@ -38,4 +38,22 @@ mainButton.onclick = function () {
 		mainVideo.muted = true;
 	}
 };
+new Swiper('.reviews-slider', {
+	speed: 600,
+	slidesPerView: 1,
+	navigation: {
+		nextEl: '.reviews-slider__btn-next',
+		prevEl: '.reviews-slider__btn-prev'
+	},
+	spaceBetween: 20,
+	breakpoints: {
+		961: {
+			slidesPerView: 2,
+		},
+		1241: {
+			slidesPerView: 3,
+		},
+	},
+});;
+;
 
