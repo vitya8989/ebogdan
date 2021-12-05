@@ -757,6 +757,57 @@ body {
   background: #fff;
   color: #000
 }
+.footer {
+  background: #3d3e3d
+}
+.footer__content {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.footer__texts {
+  width: 50%
+}
+.footer__text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 0 6px #000
+}
+.footer__text:last-child {
+  font-size: 26px;
+  margin: 20px 0 0 0
+}
+.footer__text:last-child a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px
+}
+.footer__links {
+  width: calc(50% - 40px);
+  margin: 0 0 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.footer__link {
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  padding: 150px 0 0 0
+}
+.footer__link:first-child {
+  background: url(../img/icons/email_icon.svg) center 0/100px 100px no-repeat;
+  margin: 0 20px 0 0
+}
+.footer__link:last-child {
+  background: url(../img/icons/tel_icon.svg) center 0/100px 100px no-repeat
+}
 @media (max-width:1400px) {
   .services__content {
     padding: 80px 0
@@ -791,6 +842,33 @@ body {
   .benefits__image:nth-child(2) {
     left: 40px;
     top: 240px
+  }
+}
+@media (max-width:1180px) {
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .footer__texts {
+    margin: 30px 0 0 0;
+    max-width: 700px;
+    width: 100%
+  }
+  .footer__text:last-child {
+    text-align: center
+  }
+  .footer__links {
+    margin: 0;
+    max-width: 700px;
+    width: 100%
+  }
+  .footer__link {
+    padding: 120px 0 0 0
   }
 }
 @media (max-width:1023px) {
@@ -1061,6 +1139,21 @@ body {
   .order__btn:hover {
     background: #3d3e3d;
     color: #fff
+  }
+  .footer__content {
+    padding: 40px 0
+  }
+}
+@media (max-width:580px) {
+  .footer__link {
+    font-size: 22px;
+    padding: 80px 0 0 0
+  }
+  .footer__link:first-child {
+    background: url(../img/icons/email_icon.svg) center 0/60px 60px no-repeat
+  }
+  .footer__link:last-child {
+    background: url(../img/icons/tel_icon.svg) center 0/60px 60px no-repeat
   }
 }
 @media (max-width:540px) {
