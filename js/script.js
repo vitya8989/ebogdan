@@ -57,6 +57,69 @@ mainButton.onclick = function () {
 		mainVideo.muted = true;
 	}
 };
+let aboutLeftImg = document.querySelector('.about__left_img');
+let aboutRightImg = document.querySelector('.about__right_img');
+let aboutRightTexts = document.querySelector('.about__right_texts');
+let about = document.querySelector('.about');
+let offsetPosition1;
+
+let servicesLeft = document.querySelector('.services__left');
+let servicesRight = document.querySelector('.services__right');
+let servicesLink = document.querySelector('.services__link');
+let services = document.querySelector('.services');
+let offsetPosition2;
+
+let workItems = document.querySelectorAll('.work__item');
+let workArrow = document.querySelectorAll('.work__arrow');
+let workImg = document.querySelector('.work__img');
+let work = document.querySelector('.work');
+let offsetPosition3;
+
+let benefitsTexts = document.querySelector('.benefits__texts');
+let benefitsImage = document.querySelectorAll('.benefits__image');
+let benefits = document.querySelector('.benefits');
+let offsetPosition4;
+
+
+window.onload = function () {
+	let scrollTarget1 = about;
+	offsetPosition1 = scrollTarget1.getBoundingClientRect().top + window.pageYOffset;
+	let scrollTarget2 = services;
+	offsetPosition2 = scrollTarget2.getBoundingClientRect().top + window.pageYOffset;
+	let scrollTarget3 = work;
+	offsetPosition3 = scrollTarget3.getBoundingClientRect().top + window.pageYOffset;
+	let scrollTarget4 = benefits;
+	offsetPosition4 = scrollTarget4.getBoundingClientRect().top + window.pageYOffset;
+	return offsetPosition1, offsetPosition2, offsetPosition3, offsetPosition4;;
+}
+window.onscroll = function () {
+	let centerOfWindow = window.pageYOffset + window.innerHeight / 5;
+	if (centerOfWindow >= offsetPosition1) {
+		aboutLeftImg.classList.add('active');
+		aboutRightImg.classList.add('active');
+		aboutRightTexts.classList.add('active');
+	}
+	if (centerOfWindow >= offsetPosition2) {
+		servicesLeft.classList.add('active');
+		servicesRight.classList.add('active');
+		servicesLink.classList.add('active');
+	}
+	if (centerOfWindow >= offsetPosition3) {
+		for (let i = 0; i < workItems.length; i++) {
+			workItems[i].classList.add('active');
+		}
+		for (let i = 0; i < workArrow.length; i++) {
+			workArrow[i].classList.add('active');
+		}
+		workImg.classList.add('active');
+	}
+	if (centerOfWindow >= offsetPosition4) {
+		for (let i = 0; i < benefitsImage.length; i++) {
+			benefitsImage[i].classList.add('active');
+		}
+		benefitsTexts.classList.add('active');
+	}
+};
 new Swiper('.reviews-slider', {
 	speed: 600,
 	slidesPerView: 1,
@@ -154,4 +217,5 @@ surnameInput.onfocus = function () {
 telInput.onfocus = function () {
 	telInput.classList.remove('error-input');
 };
+
 
