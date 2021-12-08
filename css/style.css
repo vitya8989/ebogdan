@@ -981,8 +981,13 @@ body {
   line-height: 40px;
   max-width: 700px;
   text-align: center;
-  padding: 30px 0;
-  margin: 0 0 50px 0
+  padding: 40px;
+  margin: 0 0 50px 0;
+  font-weight: 700;
+  border-radius: 30px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 20px rgba(0,0,0,.86);
+  box-shadow: 5px 5px 20px rgba(0,0,0,.86)
 }
 .order__message_text p:last-child {
   margin: 20px 0 0 0
