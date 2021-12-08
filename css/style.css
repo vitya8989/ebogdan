@@ -74,16 +74,16 @@ h6 {
   font-weight: 700
 }
 @font-face {
-  font-family: ekaterinavelikayaone;
+  font-family: Roboto;
   font-display: swap;
-  src: url(../fonts/ekaterinavelikayaone.woff) format("woff"),url(../fonts/ekaterinavelikayaone.woff2) format("woff2");
+  src: url(../fonts/Roboto-Thin.woff) format("woff"),url(../fonts/Roboto-Thin.woff2) format("woff2");
   font-weight: 400;
   font-style: normal
 }
 @font-face {
-  font-family: Roboto;
+  font-family: ekaterinavelikayaone;
   font-display: swap;
-  src: url(../fonts/Roboto-Regular.woff) format("woff"),url(../fonts/Roboto-Regular.woff2) format("woff2");
+  src: url(../fonts/ekaterinavelikayaone.woff) format("woff"),url(../fonts/ekaterinavelikayaone.woff2) format("woff2");
   font-weight: 400;
   font-style: normal
 }
@@ -199,7 +199,8 @@ body {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
+  font-weight: 700
 }
 .nav__link:hover {
   color: #3d3e3d
@@ -208,7 +209,7 @@ body {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 1px;
   background: #000;
   bottom: -3px;
   -webkit-transition: .25s;
@@ -884,6 +885,9 @@ body {
   -ms-transform: scale(1.3);
   transform: scale(1.3)
 }
+.order {
+  background: url(../img/benefits_bg.jpg) center/cover no-repeat
+}
 .order__content {
   padding: 80px 0
 }
@@ -989,7 +993,7 @@ body {
   height: 100%
 }
 .footer {
-  background: #3d3e3d
+  background: #000
 }
 .footer__content {
   padding: 80px 0;
@@ -1501,4 +1505,7 @@ body {
 }
 .webp .reviews {
   background: linear-gradient(to top,#000 0,rgba(0,0,0,0) 100%),url(../img/about_bg.webp) center/cover no-repeat
+}
+.webp .order {
+  background: url(../img/benefits_bg.webp) center/cover no-repeat
 }
