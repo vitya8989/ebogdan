@@ -1252,17 +1252,16 @@ body {
     transform: scale(0)
   }
 }
-@media (max-width:768px) {
-  .h2-title {
-    font-size: 42px
-  }
-}
 @media (max-width:767px) {
   .container {
     padding: 0 15px
   }
   .white_line {
     display: none
+  }
+  .h2-title {
+    font-size: 42px;
+    margin: 0 0 50px 25px
   }
   .header__content {
     height: 50px
@@ -1348,6 +1347,9 @@ body {
   .services__content {
     padding: 60px 0 40px
   }
+  .services__title {
+    margin: 0 0 50px 65px
+  }
   .services__row {
     display: block
   }
@@ -1403,6 +1405,9 @@ body {
   }
   .order__content {
     padding: 60px 0 40px
+  }
+  .order__title {
+    margin: 0 0 50px 65px
   }
   .order__inputs {
     display: block;
