@@ -343,7 +343,8 @@ body {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   margin: 0 auto;
-  max-width: 950px
+  max-width: 950px;
+  padding: 50px 0 0 0
 }
 .about__left_img {
   width: 494px;
@@ -453,7 +454,7 @@ body {
   text-shadow: none
 }
 .services__row {
-  margin: 40px 0 0 0;
+  padding: 50px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex
@@ -604,7 +605,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0 0 0
+  padding: 50px 0 0 0
 }
 .work__img {
   width: 480px;
@@ -719,7 +720,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0 0 0;
+  padding: 50px 0 0 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
@@ -844,9 +845,8 @@ body {
 }
 .reviews__slider {
   position: relative;
-  margin: 40px 0 0 0;
   width: 100%;
-  padding: 0 40px
+  padding: 50px 40px 0
 }
 .reviews__item {
   width: 100%;
@@ -912,10 +912,10 @@ body {
 }
 .order__title {
   color: #000;
-  text-shadow: none;
-  margin: 0 0 40px 0
+  text-shadow: none
 }
 .order__form {
+  padding: 50px 0 0 0;
   height: 0;
   visibility: hidden;
   opacity: 0;
@@ -1069,16 +1069,16 @@ body {
 }
 @media (max-width:1400px) {
   .h2-title {
-    margin: 0 0 50px 25px
+    margin: 0 0 0 25px
   }
   .services__content {
     padding: 80px 0
   }
   .services__title {
-    margin: 0 0 50px 65px
+    margin: 0 0 0 65px
   }
   .order__title {
-    margin: 0 0 40px 65px
+    margin: 0 0 0 65px
   }
 }
 @media (max-width:1240px) {
@@ -1103,7 +1103,7 @@ body {
   .work__row {
     display: block;
     max-width: 800px;
-    margin: 50px auto 0
+    margin: 0 auto
   }
   .work__img {
     margin: 0 auto
@@ -1183,9 +1183,6 @@ body {
   .main__content {
     height: calc(100vh - 70px)
   }
-  .about__row {
-    margin: 30px 0 0 0
-  }
   .benefits__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1214,9 +1211,6 @@ body {
   }
 }
 @media (max-width:930px) {
-  .services__row {
-    margin: 30px 0 0 0
-  }
   .services__left {
     margin: 0 20px 0 0;
     -webkit-box-flex: 0;
@@ -1246,7 +1240,7 @@ body {
   .reviews__slider {
     max-width: 600px;
     margin: 20px auto 0;
-    padding: 0 50px
+    padding: 50px 50px 0
   }
   .reviews-slider {
     padding: 0
