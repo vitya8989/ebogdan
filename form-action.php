@@ -11,7 +11,7 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 $mail->setFrom('jeniock@mail.ru');
-$mail->addAddress('vitya898989@gmail.com'); 
+$mail->addAddress('jeniock@mail.ru'); 
 $mail->Subject = 'Заявка на консультацию';
         $body = '<html>
                     <head>

@@ -98,6 +98,8 @@ window.onscroll = function () {
 		aboutLeftImg.classList.add('active');
 		aboutRightImg.classList.add('active');
 		aboutRightTexts.classList.add('active');
+		mainVideo.muted = true;
+		mainButton.classList.remove('mute');
 	}
 	if (centerOfWindow >= offsetPosition2) {
 		servicesLeft.classList.add('active');
@@ -198,17 +200,17 @@ form.onsubmit = async (e) => {
 		telInput.classList.add('error-input');
 	}
 	if (valid) {
-		// let response = await fetch('form-action.php', {
-		// 	method: 'POST',
-		// 	body: new FormData(form)
-		// });
-		// if (response.ok) {
-		form.classList.remove('show');
-		orderMessage.classList.add('show');
-		form.reset();
-		// } else {
-		// 	alert('Произошла ошибка отправки, попробуйте еще раз!');
-		// }
+		let response = await fetch('form-action.php', {
+			method: 'POST',
+			body: new FormData(form)
+		});
+		if (response.ok) {
+			form.classList.remove('show');
+			orderMessage.classList.add('show');
+			form.reset();
+		} else {
+			alert('Произошла ошибка отправки, попробуйте еще раз!');
+		}
 	}
 }
 
