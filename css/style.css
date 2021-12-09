@@ -835,9 +835,9 @@ body {
   transform: translateY(0) scale(1)
 }
 .reviews {
-  background: -webkit-gradient(linear,left bottom,left top,from(black),to(rgba(0,0,0,0))),url(../img/about_bg.jpg) center/cover no-repeat;
-  background: -o-linear-gradient(bottom,#000 0,rgba(0,0,0,0) 100%),url(../img/about_bg.jpg) center/cover no-repeat;
-  background: linear-gradient(to top,#000 0,rgba(0,0,0,0) 100%),url(../img/about_bg.jpg) center/cover no-repeat
+  background: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0))),url(../img/about_bg.jpg) center/cover no-repeat;
+  background: -o-linear-gradient(bottom,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%),url(../img/about_bg.jpg) center/cover no-repeat;
+  background: linear-gradient(to top,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%),url(../img/about_bg.jpg) center/cover no-repeat
 }
 .reviews__content {
   padding: 80px 0
@@ -848,19 +848,38 @@ body {
   width: 100%;
   padding: 0 40px
 }
-.reviews__img {
+.reviews__item {
   width: 100%;
-  height: auto
+  height: 370px;
+  padding: 30px;
+  background: url(../img/bottom-review.png) center 104%/100% no-repeat,#000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #fff
 }
-.reviews__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover
+.reviews__text {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #fff;
+  margin: -20px 0 0 0
+}
+.reviews__author {
+  color: #fff;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin: 15px 0 0 0
 }
 .reviews-slider {
   overflow: hidden;
-  padding: 50px 0
+  padding: 70px 0
 }
 .reviews-slider__btn-next.swiper-button-next::after,
 .reviews-slider__btn-prev.swiper-button-prev::after {
@@ -1058,6 +1077,19 @@ body {
     margin: 40px auto 0
   }
 }
+@media (max-width:1239px) {
+  .reviews-slider__slide.swiper-slide-next,
+  .reviews-slider__slide.swiper-slide-prev {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+  }
+  .reviews-slider__slide.swiper-slide-active {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+  }
+}
 @media (max-width:1200px) {
   .work__row {
     display: block;
@@ -1199,6 +1231,19 @@ body {
   }
   .services__right_img {
     margin: 20px 0 0 0
+  }
+}
+@media (max-width:869px) {
+  .reviews__slider {
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 0 50px
+  }
+  .reviews-slider__slide.swiper-slide-next,
+  .reviews-slider__slide.swiper-slide-prev {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
   }
 }
 @media (max-width:768px) {
@@ -1350,21 +1395,6 @@ body {
   .reviews__content {
     padding: 40px 0
   }
-  .reviews__slider {
-    padding: 0 50px;
-    margin: 20px 0 0 0
-  }
-  .reviews-slider__slide.swiper-slide-next,
-  .reviews-slider__slide.swiper-slide-prev {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0)
-  }
-  .reviews-slider__slide.swiper-slide-active {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
-  }
   .order__content {
     padding: 40px 0
   }
@@ -1503,13 +1533,16 @@ body {
   background: linear-gradient(to bottom,rgba(255,255,255,.5) 0,rgba(255,255,255,.6) 100%),url(../img/benefits_bg.webp) center/cover no-repeat
 }
 .webp .reviews {
-  background: -webkit-gradient(linear,left bottom,left top,from(black),to(rgba(0,0,0,0))),url(../img/about_bg.webp) center/cover no-repeat
+  background: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0))),url(../img/about_bg.webp) center/cover no-repeat
 }
 .webp .reviews {
-  background: -o-linear-gradient(bottom,#000 0,rgba(0,0,0,0) 100%),url(../img/about_bg.webp) center/cover no-repeat
+  background: -o-linear-gradient(bottom,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%),url(../img/about_bg.webp) center/cover no-repeat
 }
 .webp .reviews {
-  background: linear-gradient(to top,#000 0,rgba(0,0,0,0) 100%),url(../img/about_bg.webp) center/cover no-repeat
+  background: linear-gradient(to top,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%),url(../img/about_bg.webp) center/cover no-repeat
+}
+.webp .reviews__item {
+  background: url(../img/bottom-review.webp) center 104%/100% no-repeat,#000
 }
 .webp .order {
   background: url(../img/benefits_bg.webp) center/cover no-repeat

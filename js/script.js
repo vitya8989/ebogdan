@@ -127,9 +127,13 @@ new Swiper('.reviews-slider', {
 		nextEl: '.reviews-slider__btn-next',
 		prevEl: '.reviews-slider__btn-prev'
 	},
-	centeredSlides: true,
 	breakpoints: {
-		768: {
+		870: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		1240: {
+			centeredSlides: true,
 			slidesPerView: 3,
 			initialSlide: 1,
 		},
