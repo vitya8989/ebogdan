@@ -846,7 +846,7 @@ body {
 .reviews__slider {
   position: relative;
   width: 100%;
-  padding: 50px 40px 0
+  padding: 50px 40px
 }
 .reviews__item {
   width: 100%;
@@ -1082,6 +1082,9 @@ body {
   }
 }
 @media (max-width:1240px) {
+  .reviews-slider {
+    padding: 0
+  }
   .order__btn {
     margin: 40px auto 0
   }
@@ -1240,10 +1243,7 @@ body {
   .reviews__slider {
     max-width: 600px;
     margin: 20px auto 0;
-    padding: 50px 50px 0
-  }
-  .reviews-slider {
-    padding: 0
+    padding: 50px
   }
   .reviews-slider__slide.swiper-slide-next,
   .reviews-slider__slide.swiper-slide-prev {
